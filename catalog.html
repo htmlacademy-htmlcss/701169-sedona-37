@@ -9,33 +9,33 @@
 <body>
   <header class="main-header">
       <a class="main-header-logo" href="">
-        <img src="#" width="138" height="64" alt="Логотип сайта города Седона">
+        <img src="#" width="138" height="64" alt="Логотип сайта города Седона.">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-list-item">
-            <a class="navigation-link" href="#!">Главная</a>
+            <a class="navigation-link" href="#">Главная</a>
           </li>
           <li class="navigation-list-item">
-            <a class="navigation-link" href="#!">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-list-item">
-            <a class="navigation-link" href="#!">Гостиницы</a>
+            <a class="navigation-link" href="#">Гостиницы</a>
           </li>
         </ul>
          <ul class="navigation-list navigation-user">
           <li class="navigation-list-item">
-            <a class="navigation-link" href="#!">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-list-item">
-            <a class="navigation-link" href="#!">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
           <li class="navigation-list-item">
-            <a class="button" href="#!">Хочу сюда!</a>
+            <a class="button" href="#">Хочу сюда!</a>
           </li>
          </ul>
       </nav>
@@ -43,7 +43,7 @@
     <main class="catalog-main">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
+        <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
               <span class="visually-hidden">Главная</span>
@@ -52,7 +52,7 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
-        </ul>
+        </ol>
       </header>
       <section class="catalog-hotels">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
@@ -98,23 +98,25 @@
             </ul>
           </fieldset>
         </form>
-        <button class="button" type="submit">Применить</button>
-        <button class="button" type="submit">Сбросить</button>
-        <p class="filer-results">Найдено гостиниц: 38</p>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогие</option>
-          <option value="popular">Сначала популярные</option>
-        </select>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать превью</span>
-        </a>
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <section class="sorting">
+          <button class="button" type="submit">Применить</button>
+          <button class="button" type="submit">Сбросить</button>
+          <p class="filer-results">Найдено гостиниц: 38</p>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
+          </select>
+          <a class="button" href="#">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a href="#" class="button button-light">
+            <span class="visually-hidden">Показать превью</span>
+          </a>
+          <a href="#" class="button button-light">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </section>
         <ul class="hotels-list">
           <li class="hotels-item">
             <a class="hotels-item-link" href="#">
@@ -183,15 +185,12 @@
         </ul>
       </section>
       <section class="newsletter">
-        <h2 class="visually-hidden">Форма подписки на рассылку</h2>
-        <p class="general-description">Подпишитесь на рассылку</p>
+        <h2 class="visually-hidden">Подпишитесь на рассылку</h2>
         <p class="general-description-detail">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="newsletter-email">Email</label>
         <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-        <button class="button newsletter-button" type="submit">
-          <span class="newsletter-button-text">Подписаться</span>
-        </button>
+        <button class="button newsletter-button" type="submit">Подписаться</button>
       </form>
       </section>
     </main>
@@ -199,17 +198,17 @@
       <section class="social">
         <ul class="social-list">
           <li class="social-list-item">
-            <a class="socail-icon" href="#">
+            <a class="social-icon" href="#">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-list-item">
-            <a class="socail-icon" href="#">
+            <a class="social-icon" href="#">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="social-list-item">
-            <a class="socail-icon" href="#">
+            <a class="social-icon" href="#">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
@@ -220,7 +219,7 @@
       </address>
       <section class="footer-logo">
          <a class="footer-logo-item" href="https://htmlacademy.ru/">
-           <img src="#" width="115" height="33" alt="Логотип HTML Академии">
+           <img src="#" width="115" height="33" alt="Логотип HTML Академии.">
          </a>
       </section>
     </footer>
