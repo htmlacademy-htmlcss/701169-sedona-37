@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Гостиницы Седоны</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="main-header">
@@ -99,23 +100,25 @@
           </fieldset>
         </form>
         <section class="sorting">
-          <button class="button" type="submit">Применить</button>
-          <button class="button" type="submit">Сбросить</button>
-          <p class="filer-results">Найдено гостиниц: 38</p>
+          <button class="button button-apply" type="submit">Применить</button>
+          <button class="button button-reset" type="submit">Сбросить</button>
+          <p class="filter-results">Найдено гостиниц: <span class="filter-results-number">38</span></p>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
-          <a class="button" href="#">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a href="#" class="button button-light">
-            <span class="visually-hidden">Показать превью</span>
-          </a>
-          <a href="#" class="button button-light">
-            <span class="visually-hidden">Показать список</span>
-          </a>
+          <ul class="view-layout">
+            <a class="button button-light" href="#">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a href="#" class="button button-light">
+              <span class="visually-hidden">Показать превью</span>
+            </a>
+            <a href="#" class="button button-light">
+              <span class="visually-hidden">Показать список</span>
+            </a>
+          </ul>
         </section>
         <ul class="hotels-list">
           <li class="hotels-item">
@@ -125,8 +128,8 @@
             </a>
             <p class="hotels-item-type">Гостиница</p>
             <p class="hotels-item-price">От 4000 ₽</p>
-            <a class="hotels-item-button button" href="#">Подробнее</a>
-            <a class="hotels-item-button button" href="#">В избранное</a>
+            <a class="hotels-button-more button" href="#">Подробнее</a>
+            <a class="hotels-button-favourite button" href="#">В избранное</a>
             <p class="hotels-item-rating-detail">Рейтинг: 8,5</p>
           </li>
           <li class="hotels-item">
@@ -136,8 +139,8 @@
             </a>
             <p class="hotels-item-type">Гостиница</p>
             <p class="hotels-item-price">От 5000 ₽</p>
-            <a class="hotels-item-button button" href="#">Подробнее</a>
-            <a class="hotels-item-button hotels-item-button-selected button" href="#">В избранном</a>
+            <a class="hotels-button-more button" href="#">Подробнее</a>
+            <a class="hotels-button-favourite hotels-item-button-selected button" href="#">В избранном</a>
             <p class="hotels-item-rating-detail">Рейтинг: 9,2</p>
           </li>
           <li class="hotels-item">
@@ -147,8 +150,8 @@
             </a>
             <p class="hotels-item-type">Гостиница</p>
             <p class="hotels-item-price">От 2500 ₽</p>
-            <a class="hotels-item-button button" href="#">Подробнее</a>
-            <a class="hotels-item-button button" href="#">В избранное</a>
+            <a class="hotels-button-more button" href="#">Подробнее</a>
+            <a class="hotels-button-favourite button" href="#">В избранное</a>
             <p class="hotels-item-rating-detail">Рейтинг: 6,9</p>
           </li>
           <li class="hotels-item">
@@ -158,8 +161,8 @@
             </a>
             <p class="hotels-item-type">Гостиница</p>
             <p class="hotels-item-price">От 1500 ₽</p>
-            <a class="hotels-item-button button" href="#">Подробнее</a>
-            <a class="hotels-item-button button" href="#">В избранное</a>
+            <a class="hotels-button-more button" href="#">Подробнее</a>
+            <a class="hotels-button-favourite button" href="#">В избранное</a>
             <p class="hotels-item-rating-detail">Рейтинг: 5,0</p>
           </li>
         </ul>
@@ -176,8 +179,8 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
           </li>
-          <li class="pagination-item pagination-item-hidden">
-            <a class="pagination-link" href="#">...</a>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-item-hidden" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
