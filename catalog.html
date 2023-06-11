@@ -41,7 +41,7 @@
          </ul>
       </nav>
     </header>
-    <main class="catalog-main">
+    <main class="catalog-main main-container">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs">
@@ -55,59 +55,63 @@
           </li>
         </ol>
       </header>
-      <section class="catalog-hotels">
-        <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="swimming-pool" checked>Бассейн
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked>Парковка
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="wi-fi">Wi-fi
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="catalog-filter-type">
-            <legend class="catalog-filter-title">Тип жилья</legend>
-            <ul class="catalog-filer-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="accomodation-type" value="hotels" checked>Гостиница
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="accomodation-type" value="motels">Мотель
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="accomodation-type" value="apartement">Апартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
+      <div class="filter-section">
+        <section class="catalog-hotels">
+            <h2 class="visually-hidden" hidden>Список гостиниц с фильтрами</h2>
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Инфраструктура</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="swimming-pool" checked>Бассейн
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="parking" checked>Парковка
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="wi-fi">Wi-fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog-filter-type">
+                <legend class="catalog-filter-title">Тип жилья</legend>
+                <ul class="catalog-filer-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="accomodation-type" value="hotels" checked>Гостиница
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="accomodation-type" value="motels">Мотель
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="accomodation-type" value="apartement">Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </form>
+      </div>
         <section class="sorting">
           <button class="button button-apply" type="submit">Применить</button>
           <button class="button button-reset" type="submit">Сбросить</button>
-          <p class="filter-results">Найдено гостиниц: <span class="filter-results-number">38</span></p>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="popular">Сначала популярные</option>
-          </select>
+          <div class="filter-sorting-section">
+            <p class="filter-results">Найдено гостиниц: <span class="filter-results-number">38</span></p>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+          </div>
           <ul class="view-layout">
             <a class="button button-light" href="#">
               <span class="visually-hidden">Показать карточки</span>
@@ -167,7 +171,7 @@
           </li>
         </ul>
         <ul class="pagination">
-          <li class="pagination-item">
+          <li class="pagination-item pagination-current">
             <a class="pagination-link pagination-current">1</a>
           </li>
           <li class="pagination-item">
@@ -179,7 +183,7 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item pagination-item-hidden">
             <a class="pagination-link pagination-item-hidden" href="#">...</a>
           </li>
           <li class="pagination-item">
