@@ -92,10 +92,11 @@ ul {
 }
 
 
-.main-index {
+.hero {
   background-image: url("../images/sedona-view-main.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  min-height: 485px;
 
 }
 
@@ -103,7 +104,6 @@ ul {
   width: 1200px;
   display: flex;
   flex-direction: column;
-  margin-top: 485px;
   margin-left: auto;
   margin-right: auto;
 
@@ -139,16 +139,14 @@ ul {
 
 /* Стили для блока преимуществ  */
 
-.advantages-index {
-  display: flex;
-  width: 1200px;
-  margin: auto;
-  justify-content: center;
-}
 
 .advantages-list {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: auto;
   padding: 0;
+  justify-content: center;
 }
 
 
@@ -162,7 +160,7 @@ ul {
   display: flex;
   width: 1200px;
   text-align: center;
-  /* height: 385px; */
+  margin: auto;
 }
 
 .advantages-item-with-picture-text {
@@ -224,9 +222,46 @@ ul {
 
 .utilities-title {
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.utilities-description {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
+}
 
+.utilities-title-house {
+  background-image: url("/images/icons/house.svg");
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+
+.utilities-title-food {
+  background-image: url("/images/icons/food.svg");
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+
+.utilities-title-souvenirs {
+  background-image: url("/images/icons/souvenirs.svg");
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+
+}
 
 /* Стили для блока подписки */
 
@@ -266,17 +301,42 @@ ul {
   margin-top: 69px;
 }
 
-.social-icon {
+.social-list {
+  display: flex;
   justify-content: space-around;
+  width: 142px;
+}
+
+.social-icon-vkontakte {
+  background-image: url("/images/icons/social-vk.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 40px;
+}
+
+.social-icon-telegram {
+  background-image: url("/images/icons/social-telegram.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 40px;
+}
+
+.social-icon-youtube {
+  background-image: url("/images/icons/social-youtube.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 40px;
 }
 
 /* Стили для страницы каталога */
 
-.catalog-main {
+.filter-section {
   background-image: url("../images/mountains.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
 }
 
 
@@ -287,10 +347,6 @@ ul {
   font-weight: 700;
 }
 
-.filter-section {
-  display: flex;
-  justify-content: flex-start;
-}
 
 .button-apply {
   background-color: #82B3D3;
