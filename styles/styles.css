@@ -52,6 +52,18 @@ ul {
   list-style-type: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 /* Стили хэдера */
 
 .main-header {
@@ -70,6 +82,8 @@ ul {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -81,14 +95,32 @@ ul {
 .navigation-user {
   width: 268px;
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .navigation-link {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
   text-decoration: none;
+  padding: 20px 16px;
+  color: #000000;
+  list-style-type: none;
+}
+
+.navigation-search {
+  background-image: url("../images/icons/search.svg");
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.navigation-favourite {
+  background-image: url("../images/icons/favourites.svg");
+  background-repeat: no-repeat;
+  margin: auto;
 }
 
 
@@ -147,6 +179,7 @@ ul {
   margin: auto;
   padding: 0;
   justify-content: center;
+  text-align: center;
 }
 
 
@@ -181,12 +214,17 @@ ul {
   flex-grow: 1;
   margin: auto;
   justify-content: center;
-  text-align: center;
+
 }
 
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
+
+}
+
+.advantages-image-reverse {
+  order: -1;
 }
 
 .booking {
@@ -232,35 +270,27 @@ ul {
   margin-top: -50px;
 }
 
-.utilities-title-house {
-  background-image: url("/images/icons/house.svg");
+.utilities-title-general {
   background-repeat: no-repeat;
   width: 75px;
   height: 72px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 100px;
+}
+
+
+
+.utilities-title-house {
+  background-image: url("/images/icons/house.svg");
 }
 
 .utilities-title-food {
   background-image: url("/images/icons/food.svg");
-  background-repeat: no-repeat;
-  width: 75px;
-  height: 72px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 100px;
 }
 
 .utilities-title-souvenirs {
   background-image: url("/images/icons/souvenirs.svg");
-  background-repeat: no-repeat;
-  width: 75px;
-  height: 72px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 100px;
-
 }
 
 /* Стили для блока подписки */
@@ -330,7 +360,7 @@ ul {
 
 /* Стили для страницы каталога */
 
-.filter-section {
+.catalog-hotels {
   background-image: url("../images/mountains.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
