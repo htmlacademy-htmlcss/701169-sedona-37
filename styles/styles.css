@@ -23,13 +23,14 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 auto;
   min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
+  width: 1200px;
 
 }
 
@@ -67,6 +68,9 @@ body {
 .main-header {
   display: flex;
   margin: 0 auto;
+  width: 100%;
+  padding: 0 70px;
+  box-sizing: border-box;
 }
 
 .main-header-logo {
@@ -135,11 +139,16 @@ body {
 }
 
 .hero {
-  background-image: url("../images/sedona-view-main.jpg");
+  background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   min-height: 485px;
 
+}
+
+.hero-image {
+  display: block;
+  margin: 51px auto 82px;
 }
 
 .container {
@@ -148,7 +157,6 @@ body {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .general-description {
@@ -157,12 +165,9 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  width: 620px;
-  margin-top: 69px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 670px;
+  margin: 69px auto 0;
   padding-bottom: 25px;
-  margin-bottom: 0;
 
 }
 
@@ -170,33 +175,24 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  width: 620px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 670px;
+  margin: 0 auto;
   padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-
 }
 
-.description-section {
-  display: flex;
-  flex-direction: column;
-}
 
 
 /* Стили для блока преимуществ  */
+
 
 
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 69px auto 0;
   padding: 0;
   text-align: center;
-  margin-top: 90px;
   list-style-type: none;
 }
 
@@ -205,22 +201,21 @@ body {
   font-size: 24px;
   line-height: 28px;
   background-color: rgba(131, 179, 211, 0.12);
-
-
 }
 
 .middle-advantages {
   display: flex;
   width: 1200px;
-  text-align: center;
   margin: auto;
 }
 
 .middle-advantages .advantages-item {
+  display: flex;
+  flex-direction: column;
   width: 400px;
   height: 395px;
-  align-items: center;
-  margin: auto;
+  justify-content: center;
+  margin: 0;
 }
 
 .advantages-item-with-picture-text {
@@ -247,7 +242,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  padding-top: 112px;
+  padding: 0;
   margin: 0;
 }
 
@@ -255,9 +250,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   width: 230px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 62px;
+  margin: 0 auto;
+  padding: 62px 0 0;
 }
 
 .advantages-description-with-picture {
@@ -265,6 +259,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  padding-bottom: 10px;
 }
 
 
@@ -273,16 +268,20 @@ body {
 }
 
 .booking {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 69px;
+  margin: 0 auto 69px;
 }
 
 .booking .button {
-  margin-top: 62px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  margin: 54px auto 0;
+  padding: 0;
+  width: 375px;
+  height: 52px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 /* Стили для блока удобства */
 
@@ -291,9 +290,10 @@ body {
 }
 
 .utilities-list {
-  display: flex;
   width: 1200px;
-  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -301,32 +301,35 @@ body {
   font-size: 24px;
   line-height: 28px;
   background-color: rgba(131, 179, 211, 0.12);
-  margin: auto;
-  justify-content: center;
-  text-align: center;
+  margin: 0 auto;
   list-style-type: none;
+  height: 385px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .utilities-item:nth-child(2) {
   background-color: #ffffff;
 }
 
-.utilities-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 .utilities-title {
   text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .utilities-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  margin-top: 0;
+  margin: 0 auto;
+  width: 230px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .utilities-title-general {
@@ -337,15 +340,15 @@ body {
 }
 
 .utilities-title-house {
-  background-image: url("/images/icons/house.svg");
+  background-image: url("../images/icons/house.svg");
 }
 
 .utilities-title-food {
-  background-image: url("/images/icons/food.svg");
+  background-image: url("../images/icons/food.svg");
 }
 
 .utilities-title-souvenirs {
-  background-image: url("/images/icons/souvenirs.svg");
+  background-image: url("../images/icons/souvenirs.svg");
 }
 
 
@@ -369,7 +372,13 @@ body {
 .newsletter-title {
   text-transform: uppercase;
   padding-top: 96px;
-  /* padding-bottom: 20px; */
+  font-size: 30px;
+}
+
+.newsletter-description {
+  font-size: 22px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .newsletter-form {
@@ -537,6 +546,13 @@ body {
   padding-bottom: 8px;
 }
 
+.sorting {
+  display: flex;
+  width: 1060px;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
 .filter-sorting-section {
   display: flex;
   width: 1060px;
@@ -559,6 +575,15 @@ body {
   line-height: 21px;
 }
 
+.view-layout {
+  list-style-type: none;
+}
+
+.view-layout-type {
+  width: 48px;
+  height: 48px;
+}
+
 .button-light {
   background-color: #ffffff;
   color: #000000;
@@ -567,12 +592,10 @@ body {
 .hotels-list {
   list-style-type: none;
   width: 1060px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
+  margin:0 auto 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 340px 340px 340px;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -580,8 +603,17 @@ body {
   color: #000000;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 16px;
+  border: 1px solid #E6E6E6;
+
+}
+
+.hotels-item-title {
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .hotels-item-link {
@@ -589,14 +621,43 @@ body {
   line-height: 28px;
   text-decoration: none;
   color: inherit;
+  display: grid;
+  grid-column: 1 / 3;
+}
+
+.hotels-button-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 36px;
+  font-size: 16px;
+  padding: 0;
+  border-radius: 4px;
 }
 
 .hotels-button-favourite {
   background-color: #82B3D3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 36px;
+  font-size: 16px;
+  padding: 0;
+  border-radius: 4px;
 }
 
 .hotels-item-button-selected {
   background-color: #7DB54F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 36px;
+  font-size: 16px;
+  padding: 0;
+  border-radius: 4px;
 }
 
 .hotels-item-rating-detail {
