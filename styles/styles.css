@@ -453,6 +453,14 @@ body {
   color: #000000;
 }
 
+.contact-phone:hover, .contact-phone:focus {
+  color: rgba(117, 97, 87, 1);
+}
+
+.contact-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .page-footer {
   display: flex;
   width: 1200px;
@@ -478,15 +486,15 @@ body {
 }
 
 .social-icon-vkontakte {
-  background-image: url("../images/icons/social-vk.svg");
+  background-image: url("./images/icons/social-vk.svg");
 }
 
 .social-icon-telegram {
-  background-image: url("../images/icons/social-telegram.svg");
+  background-image: url("./images/icons/social-telegram.svg");
 }
 
 .social-icon-youtube {
-  background-image: url("../images/icons/social-youtube.svg");
+  background-image: url("./images/icons/social-youtube.svg");
 }
 
 .social-icon:hover {
@@ -499,6 +507,14 @@ body {
 
 .social-icon:active {
   background: rgba(104, 162, 202, 0.3);
+}
+
+.footer-logo:hover, .footer-logo:focus {
+  color: rgba(117, 97, 87, 1);
+}
+
+.footer-logo:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 /* Стили для страницы каталога */
