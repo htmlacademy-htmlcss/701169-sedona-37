@@ -500,12 +500,13 @@ body {
   width: 1200px;
   justify-content: space-around;
   margin: 69px auto 30px;
+  align-items: center;
 }
 
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-around; */
+  justify-content: space-around;
   /* width: 142px; */
   list-style-type: none;
   margin: 0;
@@ -515,28 +516,30 @@ body {
 .social-list-item {
   padding: 0;
   margin: 0;
+  margin-right: 27px;
   box-sizing: border-box;
 }
 
 .social-icon-image {
   display: block;
-  width: 48px;
-  height: 40px;
+  /* width: 48px;
+  height: 40px; */
   padding: 0;
   margin: 0;
+  fill:rgba(131, 179, 211, 1);
 }
 
 
 .social-icon-image:hover {
-  background: rgba(104, 162, 202, 1);
+  fill: rgba(104, 162, 202, 1);
 }
 
 .social-icon-image:focus {
-  background: rgba(104, 162, 202, 1);
+  fill: rgba(104, 162, 202, 1);
 }
 
 .social-icon-image:active {
-  background: rgba(104, 162, 202, 0.3);
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-logo-image {
