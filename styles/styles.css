@@ -1313,7 +1313,7 @@ body {
 }
 
 .view-layout-type:active {
-  border: 2px solid var(--icons-basic, #000);
+  outline: 2px solid var(--icons-basic, #000);
 }
 
 
